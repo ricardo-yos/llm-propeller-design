@@ -1,0 +1,36 @@
+{
+  "method": "llm",
+  "run": "run004",
+  "started_utc": "2026-10-28T22:05:34.201255+00:00",
+  "wall_time_s": 153.0,
+  "returncode": 0,
+  "model_requested": "openai/gpt-oss-120b",
+  "model_served": [
+    "openai/gpt-oss-120b"
+  ],
+  "system_fingerprints": [
+    "fp_4727af4560",
+    "fp_4a7bb72c24",
+    "fp_5a93aea882",
+    "fp_76082d2bd0",
+    "fp_803c0ba83d",
+    "fp_86dc843b12",
+    "fp_bb691ea66b",
+    "fp_c3da0d4bb9",
+    "fp_e1a78f200e",
+    "fp_f640395b96"
+  ],
+  "generation_params_sent": {},
+  "base_url_host": "api.groq.com",
+  "determinism_note": "not guaranteed: whether temperature/seed are honored depends on the provider",
+  "task": "Design the blade geometry (NACA4412) of a 2-blade propeller in hover, RPM 8000, r_root = 0.025 m, R = 0.1 m. Target thrust: 5 N. Goal: MINIMIZE the required power while reaching that thrust, by varying the root/tip pitch and chord.\n\nOnly these four variables may change, each within its allowed range:\n  - beta_root_deg: 5.0 to 40.0\n  - beta_tip_deg: 0.0 to 30.0\n  - c_root: 0.01 to 0.06\n  - c_tip: 0.005 to 0.04\n\nEverything else is FIXED and must not be changed: RPM = 8000, R = 0.1, r_root = 0.025, V = 0.0, B = 2, N = 12, rho = 1.225, nu = 1.46e-05, airfoil = NACA4412.",
+  "system_prompt_sha256": "1ae3070b4fbb5fe6",
+  "agent_py_sha256": "c19da304c3a84bd3",
+  "tools_py_sha256": "a809d1ef00579a09",
+  "problem_py_sha256": "5242c2c3586f6324",
+  "iterations": 13,
+  "input_tokens": 42551,
+  "output_tokens": 3222,
+  "openai_sdk": "2.9.0",
+  "python": "3.11.13"
+}

@@ -1,0 +1,6 @@
+{
+  "replayed_from": "tool_calls.jsonl",
+  "budget_cut": 120,
+  "evaluate_calls_total": 9,
+  "other_tool_calls": 0
+}
