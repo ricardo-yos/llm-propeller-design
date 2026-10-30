@@ -1,16 +1,17 @@
 """
 LLM Propeller Design — Agent loop
 
-The agent follows a tool-calling loop: the LLM interprets the
-engineering task, selects and calls tools, and uses their results
-to produce a final response.
+This agent follows the tool-calling loop pattern introduced in
+Episode 02 of Ready Tensor's Building Agents series.
 
-The tools perform deterministic engineering calculations for
-propeller design. API communication includes retry handling for
-transient failures.
+The LLM interprets the design task, selects and calls engineering
+tools, and uses their results to produce a final response.
 
-The main components are the client, system instructions, tool
-definitions, task, and run_agent loop.
+The engineering calculations are performed by deterministic
+Python tools, keeping the LLM responsible for interpretation
+and orchestration rather than numerical computation.
+
+API communication includes retry handling for transient failures.
 """
 import json
 import os
